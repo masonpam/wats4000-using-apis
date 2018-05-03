@@ -22,7 +22,7 @@
 
     <ul v-if="errors.length > 0" class="errors">
       <li v-for="error in errors">
-        {{ error.message}}
+        {{ error.message }}
       </li>
     </ul>
   </div>
@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     findWords: function() {
-      axios.get('https://api.datamuse.com/words?ml=test&rel_rhy=ham', {
+      axios.get('https://api.datamuse.com/words', {
         params: {
         ml: this.phrase,
         rel_rhy: this.rhyme,

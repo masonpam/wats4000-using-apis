@@ -22,7 +22,7 @@
 
     <ul v-if="errors.length > 0" class="errors">
       <li v-for="error in errors">
-        {{ error.message}}
+        {{ error.message }}
       </li>
     </ul>
   </div>
