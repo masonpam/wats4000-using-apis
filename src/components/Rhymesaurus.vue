@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     findWords: function() {
-      axios.get('https://api.datamuse.com/words', {
+      axios.get('https://api.datamuse.com/words?ml=test&rel_rhy=ham', {
         params: {
         ml: this.phrase,
         rel_rhy: this.rhyme,
