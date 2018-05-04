@@ -9,19 +9,19 @@
       <p>Find rhymes for <input type="text" v-model="rhyme"> that are adjectives used with <input type="text" v-model="phrase"> <button type="submit">Search</button></p>
     </form>
     <ul v-if="results && results.length > 0" class="results">
-      <li v-for="item in results" class="item">
+      <li v-for="item of results" class="item">
         <p><strong>{{ item.word }}</strong></p>
         <p>{{ item.score }}</p>
       </li>
     </ul>
 
-    <div v-else-if="results && results.length === 0" class="no-results">
+    <div v-else-if="results && results.length==0" class="no-results">
       <h2>No Words Found</h2>
       <p>Please adjust your search to find more words.</p>
     </div>
 
     <ul v-if="errors.length > 0" class="errors">
-      <li v-for="error in errors">
+      <li v-for="error of errors">
         {{ error.message }}
       </li>
     </ul>
@@ -48,10 +48,10 @@ export default {
         rel_rhy: this.rhyme,
         }
       })
-      .then( response => {
+      .then(response => {
         this.results = response.data;
       })
-      .catch( error => {
+      .catch(error => {
         this.errors.push(error);
       })
     }
