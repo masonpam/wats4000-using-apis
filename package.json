@@ -1,8 +1,8 @@
 {
-  "name": "using-apis",
+  "name": "final-project",
   "version": "1.0.0",
-  "description": "Practicing using APIs",
-  "author": "Shawn Rider <shawn@shawnrider.com>",
+  "description": "Final Project wats4000",
+  "author": "Pam Mason <masonp@seattleu.edu>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Rhymesaurus from '@/components/Rhymesaurus'
-import RhymeAdjective from '@/components/RhymeAdjective'
+import YesorNo from '@/components/YesorNo'
 
 Vue.use(Router)
 
@@ -9,13 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Rhymesaurus',
-      component: Rhymesaurus
+      name: 'YesorNo',
+      component: YesorNo
     },
-    {
-      path: '/rhyme-adjective',
-      name: 'RhymeAdjective',
-      component: RhymeAdjective
-    }
   ]
 })
